@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 
-a {
-  text-decoration: none;
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #17141d;
+  color: white;
+  font-family: 'DM Mono', monospace;
 }
 
 .card-list {
@@ -24,155 +28,14 @@ a {
   background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
 }
 
-.card,
-.card-item {
-  min-width: 280px;
-  height: 450px;
-}
-
-.card-item {
-  border-radius: 16px;
-  box-shadow: -1rem 0 3rem #ddd;
-}
-
-.card-item:focus-within ~ .card-item,
-.card-item:hover ~ .card-item {
-  transform: translateX(130px);
-}
-
-.card-item:hover {
-  transform: translateY(-1rem);
-}
-
-.card-item:not(:first-child) {
-  margin-left: -140px;
-}
-
-.card-item .card-body {
-  margin-bottom: auto;
-}
-
-.card-item .card-body p {
-  font-size: 14px;
-  margin: 0 0 1rem;
-  color: #7a7a8c;
-}
-
-.card-item .card-body h2 {
-  font-size: 20px;
-  margin: 0.25rem 0 auto;
-  text-decoration: none;
-  color: inherit;
-  border: 0;
-  display: inline-block;
-  cursor: pointer;
-  font-weight: bold;
-  background: linear-gradient(90deg, #ff8a00, #e52e71);
-  text-shadow: none;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.card-item .card-body h2:hover {
-  background: #7a7a8c;
-  text-shadow: none;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.card-author {
-  margin: 1rem 0 0;
-  display: grid;
-  grid-template-columns: 75px 1fr;
-  align-items: center;
-  position: relative;
-}
-
-.author-avatar {
-  grid-area: auto;
-  align-self: start;
-  position: relative;
-  box-sizing: border-box;
-}
-
-.author-avatar img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  filter: grayscale(100%);
-  display: block;
-  overflow: hidden;
-  margin: 16px 10px;
-}
-
-.author-name {
-  grid-area: auto;
-  box-sizing: border-box;
-}
-
-.author-name-prefix {
-  font-style: normal;
-  font-weight: 700;
-  color: #7a7a8c;
-}
-
-.half-circle {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 48px;
-  fill: none;
-  stroke: url(#orange-to-pink);
-  stroke-width: 8;
-  stroke-linecap: round;
-  pointer-events: none;
-}
-
-.tags {
-  margin: 1rem 0 2rem;
-  padding: 0.5rem 0 1rem;
-  line-height: 2;
-  margin-bottom: 0;
-}
-
-.tags a {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 0.5rem;
-  color: #7a7a8c;
-  text-transform: uppercase;
-  font-size: 0.66rem;
-  border: 3px solid #ccc;
-  border-radius: 2rem;
-  padding: 0.2rem 0.85rem 0.25rem;
-  position: relative;
-}
-
-.tags a:hover {
-  background: linear-gradient(90deg, #ff8a00, #e52e71);
-  text-shadow: none;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-box-decoration-break: clone;
-  background-clip: text;
-  border-color: white;
-}
-
-.card-intro {
-  background-image: linear-gradient(0deg, #ff8a00, #e52e71);
-  position: relative;
-  border-radius: 16px;
-  padding: 2rem;
-  margin: 0 4rem 0 0;
+.card {
   display: flex;
-  justify-content: flex-end;
+  position: relative;
   flex-direction: column;
-  flex: 0 0 320px;
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
 }
 
-.card-intro .card-body {
-  margin-top: 250px;
-}
+/*  */
