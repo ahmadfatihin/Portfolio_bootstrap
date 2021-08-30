@@ -18,3 +18,14 @@
 section {
   padding-top: 5rem;
 }
+
+.icon-link:visited {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  color: orangered;
+  background-color: transparent;
+}
