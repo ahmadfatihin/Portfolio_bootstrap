@@ -14,7 +14,6 @@ a {
   display: flex;
   padding: 3rem;
   overflow-x: scroll;
-  justify-content: center;
 }
 
 .card-list::-webkit-scrollbar {
@@ -50,7 +49,7 @@ a {
 
 .card:focus-within ~ .card,
 .card:hover ~ .card {
-  transform: translateX(60px);
+  transform: translateX(100px);
 }
 
 .card:hover {
@@ -58,7 +57,7 @@ a {
 }
 
 .card:not(:first-child) {
-  margin-left: -60px;
+  margin-left: -100px;
 }
 
 .card-header {
