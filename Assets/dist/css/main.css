@@ -29,3 +29,7 @@ section {
   color: orangered;
   background-color: transparent;
 }
+
+.fk-secondary {
+  color: orange;
+}
