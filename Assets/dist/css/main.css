@@ -20,7 +20,7 @@ section {
 }
 
 .icon-link:visited {
-  color: orange;
+  color: #ffc107;
   background-color: transparent;
   text-decoration: none;
 }
@@ -31,5 +31,15 @@ section {
 }
 
 .fk-secondary {
-  color: orange;
+  color: #ffc107;
+}
+.fk-secondary:hover {
+  color: orangered;
+}
+.fk-primary {
+  color: black;
+}
+
+.fk-primary:hover {
+  color: white;
 }
